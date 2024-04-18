@@ -25,7 +25,7 @@ pred_bat:
   num_inverters: 1
 
   # XXX: This is a configuration template, delete this line once you edit your configuration
-#  template: True
+  template: True
 
   #
   # Sensors, more than one can be specified and they will be summed up automatically
@@ -61,7 +61,7 @@ pred_bat:
   battery_rate_max:
     - 4000
   soc_percent:
-    - sensor.lxp_bh34502211_state_of_charge
+    - sensor.lxp_XXXXXX_state_of_charge
 #  battery_power:
 #    - sensor.givtcp_{geserial}_battery_power
 #   - sensor.givtcp2_{geserial2}_battery_power
