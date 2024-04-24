@@ -47,7 +47,17 @@ pred_bat:
 
   # Controls/status - must by 1 per inverter
   #
-#  num_inverters: 1
+  num_inverters: 1
+
+    # Services to control charging/discharging 
+charge_start_service:
+  service: switch.turn_on 
+  entity_id: "switch.lxp_XXXXXX_ac_charge"
+charge_stop_service:
+  service: switch.turn_off
+  entity_id: "switch.lxp_XXXXXX_ac_charge"
+
+  
   #
   # Run balance inverters every N seconds (0=disabled) - only for multi-inverter
   #balance_inverters_seconds: 60
